@@ -80,12 +80,16 @@ export default function Quote() {
                 <animated.div>
                     <animated.h2 
                         style = {springText}
-                        id="text"><i id="quoteSymbol" className="bi bi-quote"></i>{` ${opac?"":phrase}`}</animated.h2>
+                        id="text" className="texts">
+                            <i id="quoteSymbol" className="bi bi-quote"></i>{` ${opac?"":phrase}`}
+                    </animated.h2>
                     <animated.h2 
                         style = {springTextR}
-                        id="text2"><i id="quoteSymbol2" className="bi bi-quote"></i>{` ${opac?phrase:""}`}</animated.h2>
-                    <animated.p style={springText} id="author">-{author}</animated.p>
-                    <animated.p style={springTextR} id="author2">-{author}</animated.p>
+                        id="text2" className="texts">
+                            <i id="quoteSymbol2" className="bi bi-quote"></i>{` ${opac?phrase:""}`}
+                    </animated.h2>
+                    <animated.p style={springText} id="author" className="authors">-{author}</animated.p>
+                    <animated.p style={springTextR} id="author2" className="authors">-{author}</animated.p>
                 </animated.div>
                 <div id="buttons">
                     <animated.button 
