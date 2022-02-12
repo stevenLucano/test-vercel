@@ -14,7 +14,7 @@
     padding: 40px;
     font-family: 'Raleway', sans-serif;
     position: relative;
-    left: calc(50% - 632px/2);
+    left: calc(50% - 550px/2);
     border-radius: 3px;
 }
 
@@ -60,4 +60,39 @@
     font-size: 13px;
     padding: 0 15px;
     z-index: 2;
+}
+
+@media(max-width: 800px){
+    #quote-box {
+        width: 400px;
+        left: calc(50% - 400px/2);
+    }
+    .texts{
+        font-size: 22px;
+        font-weight: normal;
+    }
+}
+
+@media(max-width: 400px){
+    #quote-box {
+        width: 90vw;
+        left: calc(50% - 90vw/2);
+        padding: 5vw;
+    }
+    .texts{
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .authors{
+        font-size: 8px;
+        position: relative;
+        right: 5px;
+    }
+    #tweet-quote, #new-quote{
+        transform: scale(0.6);
+    }
+    #new-quote{
+        position: relative;
+        left: 15px;
+    }
 }
